@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.AplikasiCuacaTV" parent="@style/Theme.Leanback">
+        <item name="android:colorPrimary">@color/primaryColor</item>
+        <item name="android:colorSecondary">@color/SecondaryColor</item>
+        <item name="android:colorAccent">@color/location</item>
+        <item name="android:colorButtonNormal">@color/white</item>
+    </style>
+</resources>

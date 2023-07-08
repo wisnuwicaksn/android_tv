@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_browse_fragment"
+    android:layout_width="1150dp"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    tools:context=".HomeActivity"
+    tools:deviceIds="tv"
+    tools:ignore="MergeRootFrame">
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/button_shape"
+        android:gravity="center"
+        android:text="@string/add_location"
+        android:textColor="@color/white"
+        android:textSize="23sp" />
+
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:id="@+id/btn_2"
+        android:layout_below="@id/btn_1"
+        android:layout_marginTop="40dp"
+        android:text="Home"
+        android:drawableStart="@drawable/home1"
+        android:paddingStart="20dp"
+        android:drawablePadding="20dp"
+        android:textColor="@color/primaryColor"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:background="@drawable/button_shape2" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btn_2"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape3"
+        android:drawableStart="@drawable/setting"
+        android:drawablePadding="20dp"
+        android:paddingStart="20dp"
+        android:gravity="center|left"
+        android:text="Setting"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/btn_3"/>
+
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btn_3"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape3"
+        android:drawableStart="@drawable/info"
+        android:gravity="center|left"
+        android:text="About"
+        android:paddingStart="20dp"
+        android:drawablePadding="20dp"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_home_1"
+        android:layout_width="630dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_2"
+        android:layout_marginTop="20dp"
+        android:text="Welcome to ClimaCast App!"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:id="@+id/lay_detail_2"
+        android:layout_width="240dp"
+        android:layout_height="340dp"
+        android:layout_toRightOf="@id/btn_2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/tema_white"
+        android:layout_below="@id/txt_home_1">
+
+        <TextView
+            android:id="@+id/txt_home_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Siang 32ᵒC Malam 27ᵒC"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/txt_jak_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="31ᵒC"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="30dp"
+            android:layout_below="@id/txt_jak_14"/>
+
+        <TextView
+            android:id="@+id/txt_jak_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cerah"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/sun_1"/>
+
+        <TextView
+            android:id="@+id/txt_jak_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11.13"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:layout_marginStart="30dp"
+            android:layout_below="@id/txt_jak_10"/>
+
+        <TextView
+            android:id="@+id/txt_jak_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kemungkinan Hujan : 0%"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_below="@id/txt_jak_9"/>
+
+        <ImageView
+            android:id="@+id/sun_1"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:src="@drawable/sun"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/txt_home_2"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_detail_3"
+        android:layout_width="240dp"
+        android:layout_height="340dp"
+        android:layout_toRightOf="@id/lay_detail_2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/tema_white"
+        android:layout_below="@id/txt_home_1">
+
+        <TextView
+            android:id="@+id/txt_home_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Siang 32ᵒC Malam 27ᵒC"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/txt_jak_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="31ᵒC"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="30dp"
+            android:layout_below="@id/txt_jak_16"/>
+
+        <TextView
+            android:id="@+id/txt_jak_17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cerah"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/sun_2"/>
+
+        <TextView
+            android:id="@+id/txt_jak_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11.13"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:layout_marginStart="30dp"
+            android:layout_below="@id/txt_jak_17"/>
+
+        <TextView
+            android:id="@+id/txt_jak_18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kemungkinan Hujan : 0%"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_below="@id/txt_jak_15"/>
+
+        <ImageView
+            android:id="@+id/sun_2"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:src="@drawable/sun"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/txt_home_3"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_detail_4"
+        android:layout_width="240dp"
+        android:layout_height="340dp"
+        android:layout_toRightOf="@id/lay_detail_3"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/tema_white"
+        android:layout_below="@id/txt_home_1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:textSize="130sp"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
